@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #eea942;
+            transition: background-color 2s ease;
+            font-family: 'Tahoma', sans-serif;
+        }
+        
+        #left-section {
+            float: right;
+            margin-top: 50px;
+            margin-right: 50px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        #left-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #right-section {
+            float: left;
+            width: 70%;
+            text-align: right;
+            margin-top: 100px;
+            padding-right: 50px;
+        }
+        
+        #right-section h1 {
+            font-size: 28px;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        #right-section p {
+            font-size: 20px;
+            color: white;
+            text-align: right;
+        }
+    </style>
+    <script>
+        var colors = ["#8B4513", "#A0522D", "#CD853F", "#D2691E"];
+        var currentIndex = 0;
+        
+        function changeBackground() {
+            document.body.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length;
+        }
+        
+        setInterval(changeBackground, 2000);
+    </script>
+</head>
+<body>
+    <div id="left-section">
+        <img src="https://s8.uupload.ir/files/img_۲۰۲۴۰۶۲۸_۰۰۴۵۲۴_8fb0.jpg" alt="عکس رزومه">
+    </div>
+    <div id="right-section">
+        <h1>رزومه من</h1>
+        <p>سلام! امیرحسین محمدی هستم</p>
+        <p>هفده سالمه و دانش آموز علامه حلی 1 تهران هستم</p>
+        <p>به الکترونیک و سخت افزار و مکانیک ماشین علاقه دارم و از پروژه هایی که در این راستاانجام دادم می تونم از</p>
+        <p>عصای هوشمند نابینایان نام ببرم</p>
+        <p>به زبان های پایتون واچ تی ام ال و جنگو در حد پایه تسلط دارم و اطلاعاتم در مورد سخت افزار های کامپیوتر و</p>
+        <p>موبایل و همچنین انواع خودرو های سواری خیلی بالاست</p>
+    </div>
+</body>
+</html>
